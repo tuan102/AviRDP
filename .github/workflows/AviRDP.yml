@@ -12,15 +12,15 @@ jobs:
     - name: Tải xuống ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/hungwt/AviRDP/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/hungwt/AviRDP/main/wallpaper.png -OutFile wallpaper.png
-        Invoke-WebRequest https://raw.githubusercontent.com/hungwt/AviRDP/main/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/hungwt/AviRDP/main/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/tuan102/AviRDP/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/tuan102/AviRDP/main/wallpaper.png -OutFile wallpaper.png
+        Invoke-WebRequest https://raw.githubusercontent.com/tuan102/AviRDP/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/tuan102/AviRDP/main/loop.bat -OutFile loop.bat
     - name: Đang tải xuống laucher.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/hungwt/AviRDP/main/launcher/Node.js.lnk -OutFile Node.js.lnk
-        Invoke-WebRequest https://raw.githubusercontent.com/hungwt/AviRDP/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
-        Invoke-WebRequest https://github.com/hungwt/AviRDP/raw/main/launcher/Ganti%20Password.exe -OutFile "Ganti Password.exe"
+        Invoke-WebRequest https://raw.githubusercontent.com/tuan102/AviRDP/main/launcher/Node.js.lnk -OutFile Node.js.lnk
+        Invoke-WebRequest https://raw.githubusercontent.com/tuan102/AviRDP/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
+        Invoke-WebRequest https://github.com/tuan102/AviRDP/raw/main/launcher/Ganti%20Password.exe -OutFile "Ganti Password.exe"
     - name: cài ngrok.
       run: Expand-Archive ngrok.zip
     - name: Connect Ke Akun Ngrok.
